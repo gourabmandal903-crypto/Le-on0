@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le&on - Luxury Edits & Posters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #0a0a0a;
+            color: #fdfdfd;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.3em;
+            color: #d4c1ec;
+        }
+
+        nav {
+            background-color: #1f1c2c;
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+        }
+
+        nav a {
+            color: #fdfdfd;
+            text-decoration: none;
+            padding: 12px 25px;
+            display: inline-block;
+            font-weight: 600;
+            transition: 0.3s;
+            margin: 0 5px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background-color: #928dab;
+            color: #0a0a0a;
+        }
+
+        main {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffd700;
+            letter-spacing: 1px;
+        }
+
+        section p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            color: #ddd;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .product-card {
+            background: linear-gradient(145deg, #2c2a36, #3a3750);
+            border-radius: 20px;
+            padding: 25px;
+            width: 280px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.5);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        .product-card p {
+            font-size: 0.95em;
+            color: #ccc;
+        }
+
+        .product-card button {
+            background: #ffd700;
+            color: #0a0a0a;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+            font-size: 1em;
+        }
+
+        .product-card button:hover {
+            background: #e6c200;
+        }
+
+        footer {
+            background-color: #1f1c2c;
+            color: #ffd700;
+            text-align: center;
+            padding: 30px 20px;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Le&on</h1>
+        <p>Luxury Edits, Posters & Logo Designs for Modern Creators</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Le&on</h2>
+            <p>Elevate your digital content with our premium edits, posters, and logos. Each design is crafted for creators who want style, elegance, and impact.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Le&on</h2>
+            <p>Le&on specializes in luxury digital designs that make your brand or personal projects stand out. We focus on detail, sophistication, and modern aesthetics.</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Luxury Products</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/280x180" alt="Trending Edit">
+                    <h3>Premium Social Media Edit</h3>
+                    <p>Exclusive, high-quality edits for Instagram, TikTok, and YouTube. Make your content irresistible.</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/280x180" alt="Poster Design">
+                    <h3>Luxury Poster Design</h3>
+                    <p>Elegant, high-end posters for events, campaigns, or personal branding. Impress instantly.</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/280x180" alt="Logo Design">
+                    <h3>Elite Logo Design</h3>
+                    <p>Custom logos with a luxury feel. Make your brand unforgettable and stylish.</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@leonedits.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Instagram: @leon.edits</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Le&on - Luxury Edits & Posters</p>
+    </footer>
+
+</body>
+</html>
